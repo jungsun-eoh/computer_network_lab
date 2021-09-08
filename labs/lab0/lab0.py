@@ -3,9 +3,9 @@
 # Date: 02/03/2020
 # Lab0: Getting Started with Python
 # Goal: Learning the basics of Python
-# Student Name:
-# Student ID:
-# Student Github Username:
+# Student Name: Jungsun Eoh 
+# Student ID: 918590990
+# Student Github Username: jungsun-eoh
 # Instructions: Complete the TODO sections for each problem
 # Guidelines: Read each problem carefully, and implement them correctly. Grade is based on lab correctness/completeness
 #               No partial credit will be given.
@@ -20,9 +20,9 @@ Name: Jose
 SID: 91744100
 Github Username:
 """
-name = "" # TODO: your name
-SID = 000000000 # TODO: your student id
-git_username = "" # TODO: your github username
+name = "Jungsun Eoh" 
+SID = 918590990 
+git_username = "jungsun-eoh" 
 print(name)
 print(SID)
 print(git_username)
@@ -41,7 +41,13 @@ Enter the second integer: 1000
 Result is 1002
 """
 print("Problem 1 ********************") # problem header (don't modify)
-# TODO: your code here
+
+v1 = int(input("Enter the first integer: "))
+v2 = int(input("Enter the second integer: "))
+if v1 * v2 > 500:
+    print(f'Result is {v1 + v2}')
+else:
+    print(f'Result is {v1 * v2}')
 
 
 ########################## Problem 2: String Processing ##############################################################
@@ -56,8 +62,8 @@ print("Problem 2 ********************") # problem header (don't modify)
 # the given string
 myString = "Alice and Bob go to the same school. They learned today in class how to treat a lice" \
            "infestation, and Alice found the lecture really interesting"
-# TODO: your code here
-
+v3 = myString.count("Alice")
+print(v3)
 
 
 ########################## Problem 3: Loops ############################################################################
@@ -69,7 +75,11 @@ Outputs: 5, 15, 34, 56, 120, 178, 190.
 """
 print("Problem 3 ********************") # problem header (don't modify)
 numbers = [5, 10, 24, 32, 88, 90, 100]
-# TODO: your code here
+prev = 0
+for element in numbers:
+    sum = prev + element
+    print(sum)
+    prev = element
 
 ########################## Problem 4: Functions/Methods/Lists ##########################################################
 """
@@ -82,7 +92,13 @@ print("Problem 4 ********************") # problem header (don't modify)
 # function skeleton
 def merge_odds(l1, l2):
     odds = []
-    # TODO: your code here
+    for element in l1:
+        if element % 2:
+            odds.append(element)
+    for element in l2:
+        if element % 2:
+            odds.append(element)
+    odds.sort()
     return odds
 l1 = [2,1,5,7,9]
 l2 = [32,33,13]
@@ -100,7 +116,15 @@ print("Problem 5 ********************") # problem header
 # function skeleton
 def merge_odds(l1, l2):
     odds = {}
-    # TODO: your code here
+    for i in range(len(l1)):
+        if l1[i] % 2:
+            odds[i] = [l1[i]]
+    for i in range(len(l2)):
+        if l2[i] % 2:
+            if odds.get(i):
+                odds[i] = [odds.get(i)[0], l2[i]]
+            else:
+                odds[i] = [l2[i]]
     return odds
 l1 = [2,1,5,7,9]
 l2 = [32,33,13]

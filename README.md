@@ -1,12 +1,12 @@
 # CSC645 Spring 2020 Computer Networks
 Welcome to Computer Networks!. Please modify this README file with the following info: 
-1. Your name, and student id here
+1. Jungsun Eoh 918590990
 2. Update this table of assignments. Set to done after one of the assignments is completed:
 
 | Assignment                   |     C/NC      |
 | ---------------------------- | ------------- |
-| Lab 0                        | not completed |
-| Lab 1                        | not completed |
+| Lab 0                        |    completed  |
+| Lab 1                        |    completed  |
 | Lab 2                        | not completed |
 | Lab 3                        | not completed |
 | Lab 4                        | not completed |

@@ -3,9 +3,9 @@
 # Date: 02/03/2020
 # Lab1: Object Oriented Programming
 # Goal: Learning Python OOP basics
-# Student Name:
-# Student ID:
-# Student Github Username:
+# Student Name: Jungsun Eoh 
+# Student ID: 918590990
+# Student Github Username: jungsun-eoh
 # Instructions: Read each problem carefully, and implement them correctly.
 #               Your grade in labs is based on passing all the unit tests provided.
 #               The following is an example of output for a program that passes all the unit tests.
@@ -19,14 +19,14 @@ import unittest # don't modify this line of code.
 ########################## Problem 0: Print  ###########################################################################
 """
 Print your name, student id and Github username
-Sample output:
+Sample output: 
 Name: Jose
 SID: 91744100
 Github Username: joseortizcostadev
 """
-name = "" # TODO: your name
-SID = 000000000 # TODO: your student id
-git_username = "" # TODO: your github username
+name = "Jungsun Eoh" 
+SID = 918590990 
+git_username = "jungsun-eoh" 
 print(name)
 print(SID)
 print(git_username)
