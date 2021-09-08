@@ -42,7 +42,8 @@ class Employee (object):
         :param name:
         :param department:
         """
-        # TODO: create two local instance attributes and set them to the assigned parameters.
+        self.name = name
+        self.department = department
 
 
     def info(self):
@@ -51,7 +52,7 @@ class Employee (object):
         :return: "<employee name> works in the <department name> department"
                  i.e Sarah works in the Engineering department
         """
-        return None 
+        return(f'{self.name} works in the {self.department} department')
 
 
 
@@ -75,8 +76,10 @@ class Department(object):
         :param name:
         :return: VOID
         """
-        # TODO: implement your code here
-        pass
+        self.name = name
+        print("@@@@@@@@@@@@@@@@")
+        print(name)
+        return
 
     def add_employee(self, employee_name):
         """
@@ -84,9 +87,9 @@ class Department(object):
         :param employee_name:
         :return: VOID
         """
-        # TODO: create a employee object
-        # TODO: add the employee object to the self.employees list.
-        pass
+        Employee.__init__(self, employee_name, self.name)
+        self.employees.append(employee_name)
+        return
 
     def list_of_employees(self):
         """
@@ -94,7 +97,7 @@ class Department(object):
         :return: the list of employees working in this department.
         """
         # TODO: return the self.employee list
-        return None
+        return self.employees
 
 
 print('\n')
@@ -118,7 +121,7 @@ class Manager(Employee):
         :return: <info from employee> " with manager id: " <manager id>
                  i.e Sarah works in the Engineering department with manager id: 2345"
         """
-        return None
+        return(f'{self.name} works in the {self.department} department with manager id: {self.managerID}') 
 
 
 
